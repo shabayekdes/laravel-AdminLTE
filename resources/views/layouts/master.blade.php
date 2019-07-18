@@ -61,7 +61,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="./img/user.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="/img/user.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -77,7 +77,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="./img/user.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="/img/user.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -93,7 +93,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="./img/user.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="/img/user.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -148,7 +148,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-      <img src="./img/logo.png" alt="Lara Start" class="brand-image img-circle elevation-3"
+      <img src="/img/logo.png" alt="Lara Start" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">AdminLTE 3</span>
     </a>
@@ -158,7 +158,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="./img/user.png" class="img-circle elevation-2" alt="User Image">
+          <img src="/img/user.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block"> {{ Auth::user()->name }} </a>

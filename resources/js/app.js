@@ -1,53 +1,53 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("./bootstrap");
+import Vue from "vue";
+import router from "~/router";
 
-window.Vue = require('vue');
-import moment from 'moment'
-import { Form, HasError, AlertError } from 'vform'
-import VueProgressBar from 'vue-progressbar'
-import swal from 'sweetalert2'
+import moment from "moment";
+import { Form, HasError, AlertError } from "vform";
+import VueProgressBar from "vue-progressbar";
+import swal from "sweetalert2";
 
 window.swal = swal;
 const toast = swal.mixin({
     toast: true,
-    position: 'top-end',
+    position: "top-end",
     showConfirmButton: false,
     timer: 3000
 });
 window.toast = toast;
 
 Vue.use(VueProgressBar, {
-    color: 'rgb(143, 255, 199)',
-    failedColor: 'red',
-    height: '2px'
-  })
+    color: "rgb(143, 255, 199)",
+    failedColor: "red",
+    height: "2px"
+});
 
-window.Form = Form
-Vue.component(HasError.name, HasError)
-Vue.component(AlertError.name, AlertError)
+window.Form = Form;
+Vue.component(HasError.name, HasError);
+Vue.component(AlertError.name, AlertError);
 
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+// import VueRouter from 'vue-router'
+// Vue.use(VueRouter)
 
-let routes = [
-    { path: '/dashboard', component: require('./components/Dashboard.vue') },
-    { path: '/developer', component: require('./components/Developer.vue') },
-    { path: '/users', component: require('./components/Users.vue') },
-    { path: '/profile', component: require('./components/Profile.vue') }
-  ]
+// let routes = [
+//     { path: '/dashboard', component: require('./components/Dashboard.vue') },
+//     { path: '/developer', component: require('./components/Developer.vue') },
+//     { path: '/users', component: require('./components/Users.vue') },
+//     { path: '/profile', component: require('./components/Profile.vue') }
+//   ]
 
-const router = new VueRouter({
-    mode: 'history',
-    routes // short for `routes: routes`
-})
-Vue.filter('upText', text => text.charAt(0).toUpperCase() + text.slice(1))
-Vue.filter('humanData', created => moment(created).format("MMMM Do YYYY"))
+// const router = new VueRouter({
+//     mode: 'history',
+//     routes // short for `routes: routes`
+// })
+Vue.filter("upText", text => text.charAt(0).toUpperCase() + text.slice(1));
+Vue.filter("humanData", created => moment(created).format("MMMM Do YYYY"));
 
 window.Fire = new Vue();
 /**
@@ -58,7 +58,7 @@ window.Fire = new Vue();
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// Vue.component('example-component', require('~/components/ExampleComponent.vue'));
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
@@ -70,6 +70,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
  */
 
 const app = new Vue({
-    el: '#app',
+    el: "#app",
     router
 });
